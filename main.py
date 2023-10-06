@@ -23,8 +23,8 @@ def playerGo(board):
     print("Your go!")
     playerNum = input("Pick a place: ")
     if str(playerNum) in board:
-        indexComp = board.index(str(playerNum))
-        board[indexComp] = "O"
+        indexPlayer = board.index(str(playerNum))
+        board[indexPlayer] = "O"
         print(*board)
         checkerC(board)
     
